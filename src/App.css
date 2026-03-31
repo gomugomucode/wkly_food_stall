@@ -1,0 +1,60 @@
+/* :root {
+  --heritage-red: #A31D1D;
+  --warm-gold: #D4A373;
+  --forest-green: #2B5329;
+  --off-white: #F9F6F0;
+  --dark-text: #2C2C2C;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* You can import this from Google Fonts */
+  /* background-color: var(--off-white);
+  color: var(--dark-text);
+} */ 
+
+
+
+/* Import a traditional-looking serif font for headings, and a clean one for text */
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@400;600;700&family=Inter:wght@400;500&display=swap');
+/* Reset the default Vite styling */
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+
+:root {
+  --heritage-red: #9B1B30; /* Deeper crimson, reminiscent of traditional colors */
+  --warm-gold: #D4AF37; /* Richer gold */
+  --forest-green: #2B5329;
+  --off-white: #FDFBF7; /* A warmer, earthier white */
+  --dark-text: #2C2C2C;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--off-white);
+  color: var(--dark-text);
+  /* This adds a very subtle, traditional-style geometric pattern to the background */
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239b1b30' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Apply the heritage font to all headings */
+h1, h2, h3, h4, .section-title, .menu-card-title {
+  font-family: 'Karma', serif;
+}
+
+/* (Keep the rest of your specific component styles as they were, or add them here) */
