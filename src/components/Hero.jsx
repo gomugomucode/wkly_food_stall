@@ -1,25 +1,43 @@
 import React from 'react';
-// import './Hero.css'; // Create this file for specific Hero styles if needed
 
 const Hero = () => {
+  // Function to handle smooth scrolling
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="hero-container" style={heroStyle}>
       <div className="hero-overlay" style={overlayStyle}>
         <h1 style={titleStyle}>Nepali Heritage Fiesta</h1>
         <p style={subtitleStyle}>Taste the Tradition in Every Bite</p>
         <div style={buttonGroupStyle}>
-          <button style={primaryButtonStyle}>View Menu</button>
-          <button style={secondaryButtonStyle}>Find Us This Weekend</button>
+          {/* Updated buttons with onClick events */}
+          <button 
+            style={primaryButtonStyle} 
+            onClick={() => scrollToSection('menu')}
+          >
+            View Menu
+          </button>
+          <button 
+            style={secondaryButtonStyle} 
+            onClick={() => scrollToSection('contact')}
+          >
+            Find Us This Weekend
+          </button>
         </div>
       </div>
     </div>
   );
 };
 
-// Inline styles for quick setup (you can move these to a CSS file later)
+// Inline styles
 const heroStyle = {
   height: '80vh',
-  backgroundImage: 'url("https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=2070&auto=format&fit=crop")', // Placeholder for a great food image
+  backgroundImage: 'url("https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=2070&auto=format&fit=crop")', 
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   display: 'flex',

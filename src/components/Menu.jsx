@@ -60,7 +60,7 @@ const menuItems = [
 
 const Menu = () => {
   return (
-    <section className="menu-section">
+    <section id="menu" className="menu-section">
       <div className="menu-container">
         <h2 className="section-title">Our Heritage Menu</h2>
         <p className="section-subtitle">Authentic recipes passed down through generations</p>

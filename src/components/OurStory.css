@@ -1,0 +1,101 @@
+.story-section {
+  padding: 5rem 2rem;
+  /* This ensures the background pattern from App.css flows through seamlessly */
+}
+
+.story-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.story-content {
+  flex: 1;
+}
+
+.story-subtitle {
+  color: var(--warm-gold);
+  font-size: 1.5rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Inter', sans-serif; /* Keeping the subtitle clean and readable */
+  font-weight: 500;
+}
+
+.story-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.story-highlights {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  border-top: 2px solid rgba(212, 175, 55, 0.3); /* A subtle gold line separator */
+  padding-top: 2rem;
+}
+
+.highlight h4 {
+  color: var(--heritage-red);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Karma', serif;
+}
+
+.highlight p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.story-image-container {
+  flex: 1;
+  position: relative;
+  padding-right: 20px; /* Space for the decorative border */
+  padding-top: 20px;
+}
+
+.story-image {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  border: 4px solid var(--off-white);
+  position: relative;
+  z-index: 2;
+  object-fit: cover;
+  height: 450px;
+}
+
+/* This adds a decorative gold square offset behind the image for that aesthetic touch */
+.story-image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90%;
+  height: 95%;
+  border: 3px solid var(--warm-gold);
+  border-radius: 12px;
+  z-index: 1;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 900px) {
+  .story-container {
+    flex-direction: column;
+  }
+  
+  .story-image-container {
+    padding-right: 0;
+    width: 100%;
+  }
+  
+  .story-highlights {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
