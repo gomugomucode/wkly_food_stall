@@ -27,11 +27,16 @@ const Footer = () => {
         <div className="footer-column">
           <h3 className="footer-heading">Get in Touch</h3>
           <ul className="footer-list">
-            <li><strong>Phone:</strong> +977 9767606302</li>
-            <li><strong>Email:</strong> baralanupam111@gmail.com</li>
+            <li>
+              <strong>Phone:</strong>{' '}
+              <a href="tel:+9779767606302" className="footer-link">+977 9767606302</a>
+            </li>
+            <li>
+              <strong>Email:</strong>{' '}
+              <a href="mailto:nepaliheritagefeasta@gmail.com" className="footer-link">nepaliheritagefeasta@gmail.com</a>
+            </li>
           </ul>
           <div className="social-links">
-            {/* These can be replaced with actual icon components like react-icons later */}
             <a href="#" className="social-button">TikTok</a>
             <a href="#" className="social-button">Instagram</a>
           </div>

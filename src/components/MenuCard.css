@@ -1,4 +1,4 @@
-.menu-card {
+/* .menu-card {
   background-color: white;
   border-radius: 12px;
   overflow: hidden;
@@ -60,4 +60,110 @@
   padding: 8px;
   border-radius: 6px;
   border-left: 3px solid var(--warm-gold);
+} */
+
+
+/* --- BASE CARD STYLES --- */
+.menu-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  /* Ensures content stacks vertically */
+  height: 100%;
+  /* Makes all cards in a row the same height */
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08);
+  border-color: var(--warm-gold);
+}
+
+.menu-card-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  /* Prevents the image from stretching weirdly */
+  border-bottom: 3px solid var(--heritage-red);
+}
+
+.menu-card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  /* Pushes the 'Options' box to the bottom if descriptions vary in length */
+}
+
+.menu-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  gap: 10px;
+  /* Prevents title and price from overlapping */
+}
+
+.menu-card-title {
+  margin: 0;
+  color: var(--heritage-red);
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.menu-card-price {
+  font-weight: bold;
+  background-color: var(--forest-green);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  /* Keeps the price on one line */
+}
+
+.menu-card-description {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  flex-grow: 1;
+  /* Fills empty space */
+}
+
+.menu-card-variations {
+  font-size: 0.85rem;
+  color: var(--dark-text);
+  background-color: var(--off-white);
+  padding: 10px;
+  border-radius: 6px;
+  border-left: 3px solid var(--warm-gold);
+}
+
+/* --- MOBILE SPECIFIC RULES --- */
+@media (max-width: 480px) {
+  .menu-card-image {
+    height: 180px;
+    /* Make the image slightly shorter on small phones to save screen space */
+  }
+
+  .menu-card-content {
+    padding: 1.2rem;
+    /* Reduce padding slightly */
+  }
+
+  .menu-card-title {
+    font-size: 1.25rem;
+    /* Scale down the title */
+  }
+
+  .menu-card-price {
+    font-size: 0.85rem;
+    padding: 5px 8px;
+  }
 }
