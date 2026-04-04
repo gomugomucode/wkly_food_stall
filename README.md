@@ -3,7 +3,7 @@
 A full-stack web application dedicated to celebrating and preserving the rich culinary traditions of Nepal. This platform showcases authentic local delicacies, providing users with a cultural and gastronomic journey through traditional Nepali flavors.
 
 ## 🚀 Live Demo
-[Insert Link to Vercel/Netlify/GitHub Pages here]
+https://wkly-food-stall.vercel.app/
 
 ## ✨ Features
 - **Traditional Aesthetic:** Designed with a "Heritage Red" and "Warm Gold" color palette to reflect Nepali culture.
